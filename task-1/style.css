@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+section {
+  background-image: url(images/image-1.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  color: white;
+  height: 500px !important;
+}
+
+section .container {
+  width: 800px !important;
+}
+
+section .bg-light {
+  background-color: transparent !important;
+}
+
+section .navbar .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+section .navbar .navbar-collapse ul li a {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+section .navbar .navbar-collapse ul li a:hover {
+  color: yellow !important;
+}
+
+section .btn-danger {
+  background-color: purple !important;
+  border-color: purple;
+}
+
+.cards img {
+  border-radius: 100px;
+  border: 1px solid purple;
+  background-color: purple !important;
+}
+
+.section2 .card-body a {
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  height: 40px !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.section3 {
+  background-color: purple;
+  overflow: scroll !important;
+}
+
+.section3 video {
+  padding-left: 30px;
+  width: 600px;
+}
+
+.team-1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative !important;
+  width: 180px;
+  max-width: 180px;
+  background-color: rgba(92, 12, 129, 0.61) !important;
+  border-radius: 100%;
+}
+
+.team-1 img {
+  border-radius: 100%;
+}
+
+.team-1 .button {
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.team-1 .button a {
+  color: white;
+}
+
+.team-1:hover img {
+  opacity: 0.3;
+}
+
+.team-1:hover .button {
+  opacity: 1;
+}
+
+.team-1:hover .middle {
+  opacity: 1;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+.section4 {
+  background-image: url(images/news-image.jpg);
+  height: 250px;
+  background-size: cover;
+}
+
+.section4 h3 {
+  color: white;
+}
+
+.section4 .input-group {
+  padding-left: 400px !important;
+  padding-right: 400px !important;
+  height: 55px;
+}
+
+.section4 .float-end {
+  margin-right: 400px;
+  background-color: purple;
+  color: white !important;
+  border: none;
+}
+
+.section4 button {
+  width: 100px;
+  height: 55px;
+}
+
+.section5 .contact-form {
+  background-color: #f0d71b;
+}
+
+.section5 input {
+  width: 50%;
+  border-radius: 0px;
+}
+
+.section5 label {
+  font-weight: bold;
+}
+
+.section5 textarea {
+  width: 50%;
+  border-radius: 0px;
+}
+
+.section5 .btn-primary {
+  background-color: purple;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
