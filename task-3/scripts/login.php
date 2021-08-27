@@ -18,7 +18,7 @@ if (isset($_POST['adminLogin'])){
             break;   
         }
         else{
-            header("Location: ../admin-login.php?message=Wrong credentials");
+                header("Location: ../admin/admin-login.php?message=Wrong credentials");
 
         } 
     }
