@@ -58,7 +58,7 @@ class Admin extends Dbh
         $numRows = $result->num_rows;
         if ($numRows > 0) {
             while ($row = $result->fetch_assoc()) {
-              $status[] = $row;
+                $status[] = $row;
             }
             return $status;
         }
@@ -142,9 +142,17 @@ class Student extends Dbh
         $result = $this->connect()->query($sql);
         return $result;
     }
-    public function checkRollno($rollno){
-        $sql = "SELECT * FROM `student` where  `RollNO` LIKE '$rollno' ";
-         $result= $this->connect()->query($sql);
-        return $result;
+    public function checkRollno($rollno)
+    {
+        $sql = "SELECT * FROM `student` where  `RollNO` = '$rollno' ";
+        $result = $this->connect()->query($sql);
+        $numRows = $result->num_rows;
+
+        if ($numRows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                $studentDetails[] = $row;
+            }
+            return $studentDetails;
+        }
     }
 }
